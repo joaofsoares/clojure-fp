@@ -1,4 +1,4 @@
-(ns learn.exercism.lucians-luscious-lasagna (:gen-class))
+(ns learn.exercism.lucians-luscious-lasagna)
 
 (def expected-time 40)
 
