@@ -13,7 +13,7 @@
     (is (= "PlingPlong" (convert 21)))
     (is (= "PlangPlong" (convert 35)))
     (is (= "PlingPlangPlong" (convert 105)))
-    (is (= "2 Plang" (convert 10)))))
+    (is (= "Plang" (convert 10)))))
 
 (deftest convert_test_1
 
