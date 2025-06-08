@@ -1,9 +1,9 @@
 (ns learn.exercism.bob
   (:require [clojure.string :as str]))
 
-(defn- is-filter-empty? [s] (empty? (filter #(Character/isLetter %) s)))
+(defn- is-filter-empty? [s] (not-empty (filter #(Character/isLetter %) s)))
 
-(defn is-yelling? [s] (and (not (is-filter-empty? s)) (every? #(Character/isUpperCase %) (filter #(Character/isLetter %) s))))
+(defn is-yelling? [s] (and (is-filter-empty? s) (every? #(Character/isUpperCase %) (filter #(Character/isLetter %) s))))
 
 (defn is-question? [s] (= \? (last s)))
 
